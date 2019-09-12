@@ -1,0 +1,55 @@
+1.FOR THE GREATER NUMBER:
+
+l1=input().split(" ") 
+l2=[]
+for i in l1:
+    l2.append(int(i))
+if l2[0]<l2[1]:
+    print(l2[0])
+else:
+    print(l2[1])
+    
+    
+2.REVERSE THE INPUT AND ADD TO THE ACTUAL INPUT:
+
+n=int(input())
+l1=input().split(" ")
+l2=[]
+for i in l1:
+    l2.append(int(i))
+l3=[]
+l3=l2.copy()
+l3.reverse()
+l4=[]
+for i in range(n):
+    l4.append(l2[i]+l3[i])
+for i in l4:
+  print(i,end=" ")
+  
+ 
+ 3.SECOND MAX AND MIN
+
+l1=input().split(" ")
+l2=[]
+for i in l1:
+    l2.append(int(i))
+l2.sort()
+smin=l2[1]
+l2.reverse()
+smax=l2[1]
+print(smax,smin)
+
+
+4.REMOVE THE MULTIPLES OF 5
+
+l1=input().split(" ")
+l2=[]
+for i in l1:
+    l2.append(int(i))
+for n in l2:
+    if n%5!=0:
+        print(n,end=" ")
+        
+        
+
+        
